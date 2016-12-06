@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default Lyrics = (props) => {
+ const Lyrics = (props) => {
 
   const artistChange = event => {
     props.setArtist(event.target.value);
@@ -21,9 +21,10 @@ export default Lyrics = (props) => {
         <button type="submit"
                 className="btn btn-success"
                 onClick={props.handleSubmit}>
-                Search for Lyrics
+
         </button>
       </form>
     </div>
   )
 }
+export default Lyrics;
